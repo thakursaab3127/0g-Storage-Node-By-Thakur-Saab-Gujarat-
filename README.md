@@ -32,6 +32,7 @@ sudo apt update && sudo apt install git -y
 
 ```bash
 git clone https://github.com/CodeDialect/0g-Storage-Node
+cd 0g-Storage-Node
 chmod +x 0g_node_setup.sh
 ./0g_node_setup.sh
 ```
