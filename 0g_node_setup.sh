@@ -1,4 +1,3 @@
- complete!"
 #!/bin/bash
 
 set -e
