@@ -31,10 +31,7 @@ sudo apt update && sudo apt install git -y
 ## Quick Start
 
 ```bash
-git clone https://github.com/CodeDialect/0g-Storage-Node
-cd 0g-Storage-Node
-chmod +x 0g_node_setup.sh
-./0g_node_setup.sh
+curl -sL https://raw.githubusercontent.com/CodeDialect/0g-Storage-Node/main/0g_node_setup.sh | bash
 ```
 
 ---
