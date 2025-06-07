@@ -32,6 +32,7 @@ else
   RPC_URL="https://evmrpc-testnet.0g.ai"
 fi
 
+
 # === Install dependencies ===
 echo -e "${YELLOW}Installing dependencies...${RESET}"
 sudo apt-get update && sudo apt-get upgrade -y
