@@ -47,6 +47,7 @@ bash <(curl -sL https://raw.githubusercontent.com/CodeDialect/0g-Storage-Node/ma
 - [Faucet](https://faucet.0g.ai/)
 - [Explorer](https://chainscan-galileo.0g.ai/)
 - [Miner Stats](https://storagescan-galileo.0g.ai/miner/)
+- [RPCs](https://www.astrostake.xyz/0g-status)
 
 ---
 
