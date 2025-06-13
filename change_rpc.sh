@@ -7,16 +7,26 @@ if [ ! -f "$CONFIG_PATH" ]; then
   exit 1
 fi
 
-# Ask for new RPC URL
+# Prompt user for the new RPC endpoint
 read -rp "Enter the new RPC URL: " NEW_RPC
 
-# Update the RPC line in config.toml
+# Validate that it's not empty
+if [ -z "$NEW_RPC" ]; then
+  echo "❌ RPC URL cannot be empty."
+  exit 1
+fi
+
+# Update the blockchain_rpc_endpoint line
 sed -i "s|^blockchain_rpc_endpoint *= *\".*\"|blockchain_rpc_endpoint = \"$NEW_RPC\"|" "$CONFIG_PATH"
 
-echo "✅ RPC updated to: $NEW_RPC"
+echo "✅ Updated RPC in config.toml to: $NEW_RPC"
 
-# Restart the node service
-echo "🔄 Restarting the zgs node service..."
+# Reload systemd daemon and restart the service
+echo "🔄 Reloading systemd daemon..."
+sudo systemctl daemon-reload
+
+echo "🔁 Restarting zgs service..."
 sudo systemctl restart zgs
 
-echo "✅ Node restarted. Check status with: sudo systemctl status zgs"
+echo "✅ Node restarted successfully."
+echo "📍 Check status with: sudo systemctl status zgs"
