@@ -33,7 +33,12 @@ sudo apt update && sudo apt install git -y
 ```bash
 bash <(curl -sL https://raw.githubusercontent.com/CodeDialect/0g-Storage-Node/main/0g_node_setup.sh)
 ```
+---
 
+## Change RPC
+```bash
+bash <(curl -sL https://raw.githubusercontent.com/CodeDialect/0g-Storage-Node/main/change_rpc.sh)
+```
 ---
 
 ## Faucet & Explorer
