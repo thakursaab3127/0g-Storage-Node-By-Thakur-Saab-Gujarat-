@@ -34,6 +34,8 @@ bash <( curl -sL https://raw.githubusercontent.com/CodeDialect/0g-Storage-Node/m
      && echo "       Made by Thakur Saab, Gujarat 🇮🇳" \
      && echo "🎉🌟============================================🌟🎉"
 
+
+
 ## Change RPC
 ```bash
 bash <(curl -sL https://raw.githubusercontent.com/CodeDialect/0g-Storage-Node/main/change_rpc.sh)
