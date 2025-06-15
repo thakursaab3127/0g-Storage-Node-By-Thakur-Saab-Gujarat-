@@ -26,12 +26,15 @@ Unlike Validator Nodes that secure the blockchain, **Storage Nodes** manage and 
 # Install Dependencies
 sudo apt update && sudo apt install git -y
 
-# Node Setup (ASCII banner removal + सबसेप्ट कस्टम बैनर)
+
+
 bash <( curl -sL https://raw.githubusercontent.com/CodeDialect/0g-Storage-Node/main/0g_node_setup.sh \
-         | sed '/^[ _|\/()]\+$/d;/figlet/d;/toilet/d' ) \
-     && echo && echo "🎉🌟============================================🌟🎉" \
-     && echo "       Made by Thakur Saab, Gujarat 🇮🇳" \
-     && echo "🎉🌟============================================🌟🎉"
+         | sed '/^[ _|\\/()]\+$/d;/figlet/d;/toilet/d' ) \
+     && echo && echo "============================================" \
+     && echo "       Made by Thakur Saab, Gujarat " \
+     && echo "============================================"
+
+
 
 # Change RPC
 bash <(curl -sL https://raw.githubusercontent.com/CodeDialect/0g-Storage-Node/main/change_rpc.sh)
